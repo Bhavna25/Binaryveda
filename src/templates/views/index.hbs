@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/styles/signup.css">
+    <title>Front page</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1 >Basic Sign up / Login System</h1>
+        </div>
+        
+        <div class="form-container">
+            <h2>Sign up</h2>
+            <form action="/users" method="POST">
+                <div class="field">
+                    <label>Name</label>
+                    <br>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="field">
+                    <label>Email address</label>
+                    <br>
+                    <input type="text" name="email" required>
+                </div>
+                <div class="field">
+                    <label>Age</label>
+                    <br>
+                    <input type="text" name="age" required>
+                </div>
+                <div class="field">
+                    <label>password</label>
+                    <br>
+                    <input type="password"  name="password" required>
+                </div>
+                <input id="submitBtn" type="submit" class="btn btn-primary" value="Sign up" />
+                <p>Already have an account ? click <a href="/login">here</a></p>       
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+</html>

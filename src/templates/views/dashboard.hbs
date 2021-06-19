@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <Link rel="stylesheet" href="/styles/dashboard.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Basic Sign up / Login System</h1>
+        <h2>dashboard area</h2>
+        <h4>{{message}}</h4>
+        <p>{{user.name}}</p>
+        <p>{{name}}</p>
+        <div>
+            <div class="buttons">
+                <a href="/users/profile" class="btn btn-info">Read profile</a>
+                <a href="/users/profile/delete" class="btn btn-danger">Delete Profile
+                <a href="/users/profile/updateForm" class="btn btn-warning">Update profile</a>
+                <form action="/users/profile/logout" method="POST">
+                   <input type="submit" class="btn btn-primary" value="logout">
+                </form>
+
+            </div>
+
+            <pre>{{user}}</pre>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
